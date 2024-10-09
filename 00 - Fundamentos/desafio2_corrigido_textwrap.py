@@ -105,7 +105,7 @@ def criar_usuario (usuarios):
     usuarios.append({"nome": nome, "data_nascimento": data_nascimento, "cpf": cpf, "endereco": endereco, "usuarios": usuarios})
     print(f"Cadastro de usuario: {sucesso}".upper())
 
-def filtrar_usuario(usuarios):
+def filtrar_usuario(cpf, usuarios):
     usuarios_filtrados = [usuario for usuario in usuarios if usuario["cpf"] == cpf]
     return usuarios_filtrados[0] if usuarios_filtrados else None
 
